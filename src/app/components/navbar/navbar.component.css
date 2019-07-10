@@ -1,0 +1,21 @@
+#totalNavbar{
+    padding: 0% !important;  
+}
+
+#basicExampleNav{
+background-image: linear-gradient(to right, rgb(150, 2, 37), rgb(221, 0, 49,1))!important;
+    padding: 0.5%;
+}
+.popcorn{
+    width: 10%;
+    margin-left: -49%;
+}
+ul li a{
+    color: white !important;
+    cursor: pointer;
+}
+
+ul li a:hover{
+    color: rgb(170, 165, 165) !important;
+    cursor: pointer;
+}

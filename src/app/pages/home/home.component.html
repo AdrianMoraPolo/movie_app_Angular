@@ -1,0 +1,7 @@
+<!-- <app-home></app-home> -->
+
+<div class="card-deck ml-5">
+
+    <app-card *ngFor="let movie of movies" [movie]="movie" (message)="messageEmitted($event)"></app-card>
+
+</div>

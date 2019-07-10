@@ -1,0 +1,35 @@
+<div class="card mb-3">
+  <img
+    class="card-img-top"
+    src="https://image.tmdb.org/t/p/original/{{ movie?.backdrop_path }}"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <div class="row">
+      <div class="col-3">
+        <img
+          class="card-img-top w-200"
+          *ngIf="movie?.poster_path"
+          src="https://image.tmdb.org/t/p/original/{{ movie?.poster_path }}"
+          alt="Card image cap"
+        />
+      </div>
+      <div class="col-9">
+        <h5 class="card-title">{{ movie?.title }}</h5>
+        <span class="badge badge-warning">{{movie?.vote_average}}</span> <small class="text-muted ml-3">Last updated 3 mins ago</small>
+        <p class="card-text ml-1">
+                {{movie.overview}}
+        </p>
+
+       
+
+        <p class="card-text">
+          <small class="text-muted">{{movie?.release_date}}</small>
+          <span class="badge badge-secondary ml-1" *ngFor="let genres of movie?.genres">{{genres?.name}}</span>
+        </p>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
